@@ -1,0 +1,236 @@
+@charset "utf-8";
+@font-face {
+    font-family:Montserrat-Bold;
+    src: url(../fonts/Montserrat-Bold.otf);
+}
+@font-face {
+    font-family:Montserrat-Light;
+    src: url(../fonts/Montserrat-Light.otf);
+}
+@font-face {
+    font-family:Montserrat-Regular;
+    src: url(../fonts/Montserrat-Regular.otf);
+}
+@font-face {
+    font-family:Montserrat-SemiBold;
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+/* CSS Document */
+.sidebar {
+  position: fixed;
+  top: 78px;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  border-right: 1px solid #eee;
+}
+.hprofile{    padding-right: 14px;}
+.uname{font-family:Montserrat-Regular;}
+.topnav{ border-bottom:2px solid #dcdcdc;    background-color: #FFF;}
+.lactive{    background-color: #ededed !important;
+    color: #000000 !important; font-family:Montserrat-Regular;    border-radius: 3.25rem !important ;}
+	.lmenu li a{color: #000000; font-family:Montserrat-Regular;    font-size: 15px;
+    line-height: 25px;    padding-left: 22px;}
+	.navbar-brand{    padding-left: 27px;}
+	.uname{    color: #000000;}
+	.antitle{font-family:Montserrat-Regular; padding-bottom: 14px;    font-size: 20px;}
+	
+	.anmnthlist li a{ color:#7c8ba0;font-family:Montserrat-Regular;font-size: 13px;}.anactive{ color:#7bb16d !important;}
+	.antable th,.antable td{ border:none !important;font-family:Montserrat-Regular;}
+	.antable thead th{ border:none;font-weight: normal;
+    font-family: Montserrat-Regular;
+    font-size: 15px; color:#000;}
+	.ancnt{    background-color: #f8f8f8;
+    padding: 10px 10px;
+    border-radius: 5px;    border: 1px solid #d9d9d9;}
+.antable td{color: #7bb16d; font-family:Montserrat-Bold;    padding-top: 0px;}
+.paycnt{    background-color: #f8f8f8;
+    border-radius: 5px;}
+	.paytable thead{    background-color: #d7dce2;}
+	.paytable thead th{font-weight: normal;
+    font-family: Montserrat-Regular;    font-size: 13px}
+	
+	.paytable td, .paytable th {
+   
+    border: none;
+}
+	.paytable td {
+        font-family: Montserrat-Regular;
+    font-size: 12px;
+    font-weight: normal;
+}
+.paydis li a{color: #949bad;
+    font-family: Montserrat-Regular;
+    font-weight: normal;
+    font-size: 14px;}
+	.subsccategory li a{color: #949bad;padding-right: 12px;
+    font-family: Montserrat-Regular;
+    font-weight: normal;
+    font-size: 14px;}
+	.expimg{    width: 18px;
+    padding-right: 7px;}
+	.psearch{   font-family: Montserrat-Regular; text-decoration:underline;    font-size: 13px;}
+	.expanc{ color:#949bad;  font-family: Montserrat-Regular;    font-size: 13px;}
+	.payid{ color:#6ecc89;}
+	.payred{ color:#ff3030;}
+	.pvisa{    width: 30px;
+    padding-right: 4px;}
+	.payactive{color:#6ecc89 !important;}
+	.disbtn{    background-color: #7bb16d; font-family:Montserrat-Bold;     font-size: 12px;
+    font-weight: normal;
+    color: #FFF;}
+	.disacc{    font-family: Montserrat-Bold;
+    font-size: 12px;
+    font-weight: normal;
+    color: #878787;
+    border: 1px solid #878787;}
+	.modal-body{    text-align: center;
+    padding: 49px 15px; }
+	.dispop{ font-family:Montserrat-Light;}
+	.modal-header{    background-color: #e8e8e8; border-radius: 7px;} 
+	.pdisbtn{background-color: #7bb16d; font-family:Montserrat-Bold;     font-size: 12px;
+    font-weight: normal;
+    color: #FFF;    padding: 10px 35px;}
+	.balpay a{color: #949bad;
+    font-family: Montserrat-Regular;
+    font-weight: normal;
+    font-size: 14px;}
+	.balcnt{    background-color: #f8f8f8;    border: 1px solid #d9d9d9;
+    border-radius: 5px;padding: 24px 30px;}
+	.baltab td{ border:none;  font-family: Montserrat-Regular; font-size: 13px;}
+	.balhr{    margin: 0;
+    padding: 0; color:#c1cad3;}
+	.baltilte{ font-family: Montserrat-Regular;}
+	.balamt{font-family: Montserrat-Bold;color:#6ecc89 }
+	.payoutactive{color:#6ecc89 !important;}
+	.payout {
+    background-color: #f8f8f8;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    /* padding: 24px 30px; */
+}
+.payout tr td:first-child{    padding-right: 0px;
+    text-align: center;
+    margin: 0 auto;}
+	.payimg1{    width: 16px;}
+	.payout th{    background-color: #d7dce2;font-family: Montserrat-Regular;    font-size: 13px;
+    font-weight: normal;}
+	.payout td{font-family: Montserrat-Regular;font-size: 13px; }
+	.paytransit{background-color: #c7d3e2;
+    border: 1px solid #c7d3e2;
+    margin-left: 6px;
+    border-radius: 6px;
+    padding: 2px 9px;
+    font-size: 12px;font-family:Montserrat-Bold; color:#899199; }
+	.ptchar{color:#2392cd; }
+	
+	.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+	    background-color: #7bb16d !important;
+    border: none;font-family:Montserrat-Bold;     font-size: 13px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+#uploadFile{    border-radius: 4px;
+    border: 1px solid #a0a0a0;
+    background-color: #FFF;
+    padding-left: 11px;
+    height: 38px;
+    width: 48%; }
+	.dbtn{    background-color: #7bb16d;
+    color: #FFF;font-family:Montserrat-Bold;     font-size: 13px;    padding: 10px 27px;}
+	.paydispute{ border: 1px solid #c1cad3;
+    border-radius: 5px;}
+	.dislable{font-family: Montserrat-Regular; color:#000000; font-size:13px;}
+	.disrcnt{font-family: Montserrat-Regular; color:#000000; font-size:13px;}
+	.paydispute2{ border: 1px solid #c1cad3;
+    border-radius: 5px; background-color:#f8f8f8;}
+	.payadd{ color:#7bb16d;    font-family:Montserrat-SemiBold;    font-size: 14px;
+}
+.paystitle{    font-size: 17px; color:#5f5f5f;font-family: Montserrat-Regular;}
+.paystitle2{ color:#8f8f8f; font-family:Montserrat-SemiBold; font-size: 13px; }
+.paychecktit{    font-size: 15px;font-family:Montserrat-Light; color:#8f8f8f;}
+.paybrange{    line-height: 45px;}
+.selmain{font-family:Montserrat-SemiBold !important; font-size:15px}
+.selsub{ font-family:Montserrat-Light; font-size:13px;}
+.payselect option{ border:none !important;}
+.custable{background-color: #f8f8f8;
+    border-radius: 5px;}
+	.cuscnt thead th {
+    font-weight: normal;
+    font-family: Montserrat-Regular;
+    font-size: 13px;
+}
+.cuscnt td {
+    font-family: Montserrat-Regular;
+    font-size: 12px;
+    font-weight: normal;
+}
+.cuscnt thead {
+    background-color: #d7dce2;
+}
+.cuslinks{ color:#30c949;    font-family: Montserrat-Regular;}
+.cusimg{width: 18%;
+    padding-right: 6px;
+    padding-top: 3px;}
+	.custoken{padding-top: 7px;}
+	.newcustomer{font-family: Montserrat-Regular;
+    /* padding-bottom: 14px; */
+    font-size: 22px;}
+	.nclabel{font-size: 13px;
+    font-family: Montserrat-Light;
+    color: #8f8f8f;}
+	
+.popover {    max-width: 471px !important;
+    left: -167px !important;	    width: 36%;    top: 5px !important;}
+	.popover.bs-tether-element-attached-top::after, .popover.popover-bottom::after{     margin-left: 154px !important;}
+	.popover.bs-tether-element-attached-top::before, .popover.popover-bottom::before {
+   margin-left: 153px !important;
+}
+.ccdrop{    font-family: Montserrat-Light;
+    font-size: 13px;
+    background-color: #f1f1f1;
+    color: #8f8f8f;}
+	.cclabel{font-family: Montserrat-Light; font-size: 13px; color:#2f2f2f;}
+.popover-title	{ padding: 20px;color:#2f2f2f; font-family: Montserrat-Regular;}
+.cuslisttoken{font-size: 11px;
+    padding-top: 9px;
+    font-family: Montserrat-Regular; }
+	.cusdetcnt{ background-color:#e8e8e8;}
+	.cusdetmain{    background-color: #f8f8f8;
+    border-radius: 5px; border:1px solid #c1cad3;}
+	.cusdettitle{ color:#5f5f5f;font-family: Montserrat-Regular; font-size:15px;}
+	.cusdettitle a{color:#5f5f5f;}
+	.cuspayment{ border:1px solid #e0e4e8;}
+	.cusdefault{    background-color: #e4e4e4;
+    padding: 2px 8px 2px 8px;
+    border-radius: 4px;font-family: Montserrat-Regular; font-size:12px; color:#666666 !important;}
+	.cuspayment ul li{ font-family: Montserrat-Regular; color:#242424;    font-size: 13px;
+}
+.cusaccounthd{ font-family: Montserrat-Regular; font-size:14px}
+.cusaccntcnt{ font-family: Montserrat-Light; font-size: 13px;}
+.borderless td, .borderless th {
+    border: none;
+}
+.cuspaylist td{font-family: Montserrat-Regular; font-size:12px;}
+.cusblue{ color:#55c4dc;}
+.cuspaybtn{     background-color: #e8e8e8; color:#9a9a9a;font-family: Montserrat-Regular;    font-size: 13px;}
+.cusnorecords{ color:#555555;font-family: Montserrat-Regular;    font-size: 13px;}
+.cusaddpop{    padding: 9px 15px;}
+.cusradio{     font-family: Montserrat-Light;
+    font-size: 13px;
+    color: #2f2f2f;}
