@@ -2,21 +2,34 @@
 
 @section('content')
 <style type="text/css">
-.fees_table {
-    width: 63% !important;
-    top: 74px !important;
+td {
+    border: none !important;
+}
+table.dataTable thead .sorting:after{
+  display: none !important;
 }
 </style>
-         <div class="container fees_table">
+         <div class="container col-sm-9 offset-sm-3 col-md-10 offset-md-2">
           @if (session('status'))
               <div class="alert alert-success">
                   {{ session('status') }}
               </div>
           @endif
-          <button type="button" class="btn btn-success"><a href="/create_fees">Add Fees</a></button>
-               <h2>Fees Details</h2>
-            <table class="table table-bordered" id="table">
-               <thead>
+          <div class="row">
+              <!-- <button type="button" class="btn btn-success"><a href="/create_fees">Add Fees</a></button> -->
+              <div class="col-md-6 col-sm-6 col-xs-6 col-6">
+                  <h4 class="antitle" style="font-family: 'Montserrat', sans-serif;font-weight: 600;">Fees Details</h4>
+              </div>
+
+              <div class="col-md-6 text-right">
+                <ul>
+                  <li class="list-inline-item"><a href="/create_fees" class="expanc"><i class="fa fa-plus">&nbsp;</i>New</a></li>
+<!--                   <li class="list-inline-item"><a href="#" class="expanc"><img src="http://127.0.0.1:8000/assets/images/export.png" alt="" class="img-fluid expimg">Export</a></li> -->
+                </ul>
+              </div>
+          </div>
+            <table class="table" id="example">
+               <thead style="background-color: #d7dce2;">
                   <tr>
                      <th>Name</th>
                      <th>Type</th>
@@ -28,9 +41,14 @@
          </div>
        <script>
          $(function() {
-               $('#table').DataTable({
+               $('#example').DataTable({
                processing: true,
                serverSide: true,
+              "order": [],
+                "columnDefs": [ {
+                  "targets"  : 'no-sort',
+                  "orderable": false,
+                }],
                ajax: '{{ url('getfeestotable') }}',
                columns: [
                         { data: 'name', name: 'name' },

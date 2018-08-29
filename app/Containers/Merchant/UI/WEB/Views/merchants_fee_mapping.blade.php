@@ -3,39 +3,34 @@
 @section('content')
 <style type="text/css">
     
-    .custom_class .row p {
-    float: left;
-    width: 100%;
-}
-.container.custom_class {
-    top: 110px;
-    left: 171px;
-}
 .reserve-button {
     font-size: 11px;
     border-radius: 50%;
 }
 div#un_selected_fees {
-    width: 250px;
     height: 300px;
     background: #eee;
     text-align: center; 
+    padding: 3px;
 }
 div#selected_fees {
-    width: 250px;
     height: 300px;
     background: #eee;
     text-align: center; 
-}
-.accounts {
-    width: 30%;
-    margin-left: 15px;
+    padding: 3px;
 }
 .merchants {
     width: 30%;
 }
 .submit_button {
     padding: 31px;
+}
+button#on_submit_save {
+    position: absolute;
+    margin-top: 27%;
+    top: 38%;
+    left: 22%;
+    width: 57%;
 }
 
 
@@ -153,6 +148,9 @@ img#loading-image {
 .checkbox {
     clear: both;
 }
+.col-md-4 {
+    margin-left: 4% !important;
+}
 
 
 
@@ -165,7 +163,7 @@ img#loading-image {
     </div>
 @endif
 
-<div class="container custom_class">
+<div class="container custom_class col-sm-9 offset-sm-3 col-md-10 offset-md-2">
     <div class="row">
 
         <div id="myDiv">
@@ -174,7 +172,7 @@ img#loading-image {
 
         <div class="col-md-4 form-group merchants">
             <label for="type">Select Merchants:</label>
-            <select name="merchant_select" id="merchant_select" class="form-control">
+            <select name="merchant_select" id="merchant_select" style='height: 34px !important;' class="form-control">
                 <option value='-1' disabled selected="selected">Select Merchant</option>
                 <option value='0'>All</option>
                     @foreach ($merchants as $merchant)
@@ -183,34 +181,35 @@ img#loading-image {
             </select> 
         </div>
 
+        <div class="col-md-2 submit_button">
+        <button id="on_submit_save" type="button" class="btn btn-info disable">Show</button>
+        </div>
+
         <div class="col-md-4 form-group accounts">
             <label for="type">Select Accounts:</label>
-            <select name="accounts_select" id="accounts_select" class="form-control">
+            <select name="accounts_select" id="accounts_select" style='height: 34px !important;' class="form-control">
                 <option value='-1' disabled selected="selected">Select Accounts</option>
                 <option value='0'>All</option>
             </select> 
         </div>
 
-
-        <div class="col-md-2 submit_button">
-        <button id="on_submit_save" type="button" class="btn btn-info disable">Show</button>
-        </div>
-
     </div><!-- first row ends -->
 
-    <div class="row">
+    <div class="row pt-5">
         <!--<div class="to_show_all_fees">-->
-        <div class="col-md-4" id="selected_fees">
-        <p>Applied Fee</p>
-
+        <div class="col-md-4">
+            <div id="selected_fees">
+                <p>Applied Fee</p>
+            </div>
         </div>
         <div class="col-md-2" class="custom_font_awesome">
         <button id="left_move" class="next form-control" style="width:33%;margin: 0 auto;position: absolute; top: 38%; left: 37%;"><i class="fa fa-angle-double-left" style="font-size:15px;color:black"></i></button>
         <button id="right_move" class="next form-control" style="width:33%;margin: 0 auto;position: absolute; top: 54%; left: 37%;"><i class="fa fa-angle-double-right" style="font-size:15px;color:black"></i></button>
         </div>
-        <div class="col-md-4" id="un_selected_fees">
-        <p>Non Applied Fee</p>
-
+        <div class="col-md-4">
+            <div id="un_selected_fees">
+                <p>Non Applied Fee</p>
+            </div>
         </div>
         <!-- </div> -->
     </div>

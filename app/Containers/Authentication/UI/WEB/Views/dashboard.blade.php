@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+@section('content')
 <!DOCTYPE html>
 <html>
     <head>
@@ -46,3 +47,4 @@
         </div>
     </body>
 </html>
+@stop
