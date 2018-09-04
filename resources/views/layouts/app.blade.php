@@ -39,7 +39,10 @@
     <div class="container-fluid">
       <div class="row">
         @include('layouts.sidebar')
+        @include('layouts.merchant_account')
 @endguest
+@yield('css')
 @yield('content')
+@yield('javascript')
         @include('layouts.footer')
       

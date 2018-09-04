@@ -1,0 +1,31 @@
+{
+	"folders":
+	[
+		{
+			"path": "D:\\xampp\\htdocs\\payar"
+		},
+		{
+			"path": "D:\\xampp\\htdocs\\Apiauto"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "D:\\xampp\\htdocs\\New"
+		},
+		{
+			"path": "D:\\xampp\\htdocs\\payarc3.0"
+		},
+		{
+			"path": "D:\\xampp\\htdocs\\payarc_New"
+		},
+		{
+			"path": "D:\\xampp\\htdocs\\Apiato_Adminlte"
+		}
+	],
+	"settings": {
+        "xdebug": {
+             "url": "admin.apiato.test/",
+        }
+    }
+}
