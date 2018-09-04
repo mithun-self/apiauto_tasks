@@ -36,7 +36,8 @@
         var account_id = $('#accounts_select').val();
         if(!$(this).hasClass('disable')) {
             $(this).addClass('disable');
-            $('.checkbox').remove();
+            if(account_id == 0){
+                $('.checkbox').remove();
                 var merchant_id = $('#merchant_select').val();
                 $.ajax
                     ({ 
@@ -60,9 +61,12 @@
                             });
                         }
                     });
+            }//if end account is selected all
+            else{
+
+            }//else ends account is selected other than all 
                 
-                
-                }         
+        }//if button is not disable        
 
     });
 

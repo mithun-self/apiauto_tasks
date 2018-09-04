@@ -118,7 +118,8 @@ class Controller extends WebController
             $account_from_merchant_id = Apiato::call('Accounts@GetAccountsForMapAction', [$request]);
             return $account_from_merchant_id;
         }else{
-
+            $account_from_merchant_id = Apiato::call('Accounts@GetAccountsForMapAction', [$request]);
+            return $account_from_merchant_id;
         }
 
      }
